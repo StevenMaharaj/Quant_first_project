@@ -1,0 +1,27 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+\author{Steven Maharaj}
+\title{Quant first project report}
+\begin{document}
+\maketitle
+
+\section{The quant workflow}
+\begin{enumerate}
+\item \textbf{Universe selection.} We define some universe of stocks that have some self similary. Also we should eliminate all stocks prohibited or illegal to trade.
+
+\item \textbf{Single $\alpha$ factor model}. Define and evaluate individual epressions which rank the cross section of equities. 
+
+\item \textbf{Alpha combination	}. Combine many single alpha factor into a signal $\alpha$ factor.  The combined alpha factor will have better prediction power than the best single alpha factor. This is because of the noise from the alpha factors cancel each other out.
+
+\item \textbf{Risk model} Define and calculate a set of risk factors you want to use to constrain you portfolio.
+
+\item \textbf{portofolio construction} Implement a process which takes yourfinal combined alpha and your risk model and produces a target portfolio that minimises risk under your model.
+
+\item \textbf{Eecution Implement} a trading process to transition the current portfolio to the target portfolio.
+\end{enumerate}
+\end{document}
