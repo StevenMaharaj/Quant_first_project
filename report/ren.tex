@@ -4,24 +4,49 @@
 \usepackage{amsfonts}
 \usepackage{amssymb}
 \usepackage{graphicx}
+\usepackage{hyperref}
 \usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
 \author{Steven Maharaj}
 \title{Quant first project report}
 \begin{document}
 \maketitle
 
-\section{The quant workflow}
+\section{The Quant workflow}
 \begin{enumerate}
-\item \textbf{Universe selection.} We define some universe of stocks that have some self similary. Also we should eliminate all stocks prohibited or illegal to trade.
+\item \textbf{Universe selection.} We define some universe of stocks that have some self similarity. Also, we should eliminate all stocks prohibited or illegal to trade.
 
-\item \textbf{Single $\alpha$ factor model}. Define and evaluate individual epressions which rank the cross section of equities. 
+\item \textbf{Single $\alpha$ factor model}. Define and evaluate individual expressions which rank the cross section of equities. 
 
-\item \textbf{Alpha combination	}. Combine many single alpha factor into a signal $\alpha$ factor.  The combined alpha factor will have better prediction power than the best single alpha factor. This is because of the noise from the alpha factors cancel each other out.
+\item \textbf{Alpha combination	}. Combine many single alpha factors into a signal $\alpha$ factor.  The combined alpha factor will have better prediction power than the best single alpha factor. This is because of the noise from the $\alpha$ factors cancel each other out.
 
 \item \textbf{Risk model} Define and calculate a set of risk factors you want to use to constrain you portfolio.
 
-\item \textbf{portofolio construction} Implement a process which takes yourfinal combined alpha and your risk model and produces a target portfolio that minimises risk under your model.
+\item \textbf{portfolio construction} Implement a process which takes your final combined alpha and your risk model and produces a target portfolio that minimises risk under your model.
 
-\item \textbf{Eecution Implement} a trading process to transition the current portfolio to the target portfolio.
+\item \textbf{Execution Implement} a trading process to transition the current portfolio to the target portfolio.
 \end{enumerate}
+\section{The Competition requirements}
+First, you need to use a cross-sectional, long-short equity strategy. Inaddtion you must also have
+\begin{itemize}
+
+    \item Positive returns.
+    \item Leverage between 0.8x-1.1x.
+    \item Low position concentration.
+    \item Low beta-to-SPY.
+   \item Mid-range turnover.
+   \item Long and short positions.
+    \item Trades liquid stocks.
+    \item Low exposure to sector risk.
+   \item Low exposure to style risk.
+   \item Place orders with Optimize API.
+
+\end{itemize}
+
+
+\section{Next things to research}
+\begin{itemize}
+\item Factor analysis \url{ https://www.quantopian.com/lectures/factor-analysis-with-alphalens}
+\item Morningstar funementals  - fuel and the transport industry \\ \url{ https://www.quantopian.com/docs/data-reference/morningstar_fundamentals}
+\end{itemize}
+
 \end{document}
